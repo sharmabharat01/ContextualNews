@@ -1,0 +1,11 @@
+curl "http://localhost:8080/api/v1/news/search?query=india&page=0&size=5"
+curl "http://localhost:8080/api/v1/news/source?source=ANI News&page=0&size=3"
+curl "http://localhost:8080/api/v1/news/score?minScore=0.8&page=0&size=5"
+curl "http://localhost:8080/api/v1/news/nearby?lat=19.0&lon=73.0&radius=300"
+curl -X POST http://localhost:8080/api/v1/news/search \
+-H "Content-Type: application/json" \
+-d '{
+  "query":"Bangladesh",
+  "page":0,
+  "size":3
+}'
